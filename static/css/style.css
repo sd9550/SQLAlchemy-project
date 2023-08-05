@@ -1,0 +1,47 @@
+body {
+    background-color: black;
+}
+
+h1, h3 {
+    font-family: 'Press Start 2P', serif;
+    color: white;
+    text-align: center;
+}
+
+div#container {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+
+div.game-content {
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: white;
+
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+div.add-button {
+    width: 55px;
+    height: 30px;
+    background: white;
+    color: blue;
+    text-align: center;
+    padding-top: 10px;
+    font-family: 'Press Start 2P', serif;
+}
+
+.cover {
+    padding-right: 15px;
+}
+
+.text {
+    order: 2;
+}
+
+p.white {
+    color: white;
+}

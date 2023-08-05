@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Game</title>
+  <link rel="stylesheet" href="../static/css/style.css">
+  {% from "bootstrap5/form.html" import render_form %}
+</head>
+<body>
+    <div class="game-content">
+
+    {{ render_form(form, action='/add', method='post', novalidate=False) }}
+        </div>
+</body>
+</html>

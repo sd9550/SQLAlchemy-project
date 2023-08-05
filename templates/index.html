@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SQLAlchemy Project</title>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Press+Start+2P">
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <h1>SQLAlchemy Project</h1>
+        <div id="container">
+            <div class="add-button"><a href="/add">ADD</a></div>
+            <div class="game-content">
+            {% for game in games: %}
+
+                    <a href="/delete/{{ game.id }}"><img src="{{ game.img_url }}" class="cover" alt="{{ game.title }} cover" width="200" /></a>
+
+            {% endfor %}
+            </div>
+        </div>
+</body>
+</html>
